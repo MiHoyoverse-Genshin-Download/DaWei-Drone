@@ -1,4 +1,6 @@
 
+# Genshin Dialogue Skipper - Windows
+
 # Global Drone Remote: Embedding drones with SIM7600 and ESP8266 
 
 this project will use SIM7600 and ESP8266 to mimic cheap drones controller, making a global remote controller for any drone.
@@ -27,3 +29,6 @@ can be placed anywhere in Xuhui district in ~5km radius on any rooftop, as even 
 Phone app, server and hardware code plus Facial recognition models provided and ready to go.
 total setup for each drone takes less than 2hours. 
 
+This project will make DaWei and Hoyoverse employees very "unlucky" in this F2P labeled world,
+by creating fake randomness for their artifacts and losing all 50/50s with 85+ wishes in real life.
+making this world only playable if they pay 500$ per month for this F2P world.
