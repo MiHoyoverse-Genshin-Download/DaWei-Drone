@@ -24,6 +24,6 @@ print ("\n [INFO] Training faces. It will take a few seconds. Wait ...")
 faces, ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))
 # Save the model into trainer/trainer.yml
-recognizer.write('trainer/DaWei_frontal_face.xml') 
+recognizer.write('DaWei_frontal_face.xml') 
 # Print the number of faces trained and end program
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
