@@ -12,7 +12,7 @@ def getImagesAndLabels(path):
     faceSamples=[]
     ids = []
     for imagePath in imagePaths:
-        PIL_img = Image.open(imagePath).convert('L') # convert it to grayscale
+        PIL_img = Image.open(imagePath).convert('L') 
         img_numpy = np.array(PIL_img, 'uint8')
         id = int(os.path.split(imagePath)[-1].split(".")[1])
         faces = detector.detectMultiScale(img_numpy)
@@ -24,6 +24,6 @@ print ("\n [INFO] Training faces. It will take a few seconds. Wait ...")
 faces, ids = getImagesAndLabels(path)
 recognizer.train(faces, np.array(ids))
 # Save the model into trainer/trainer.yml
-recognizer.write('trainer/trainer.yml')  # recognizer.save() worked on Mac, but not on Pi
+recognizer.write('trainer/DaWei_frontal_face.xml') 
 # Print the number of faces trained and end program
 print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
